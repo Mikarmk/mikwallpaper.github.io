@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiveWallpapers - Живые обои для рабочего стола</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>LiveWallpapers</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Поиск обоев...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="user-actions">
+            <button class="upload-btn">Загрузить</button>
+            <button class="login-btn">Войти</button>
+        </div>
+    </header>
+
+    <nav class="categories">
+        <ul>
+            <li class="active" data-category="all">Все</li>
+            <li data-category="anime">Аниме</li>
+            <li data-category="nature">Природа</li>
+            <li data-category="pixel">Пиксели</li>
+            <li data-category="minimal">Минимализм</li>
+            <li data-category="space">Космос</li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="wallpapers-grid">
+            <!-- Обои будут добавлены через JavaScript -->
+        </section>
+    </main>
+
+    <div class="preview-modal">
+        <div class="preview-content">
+            <div class="preview-window">
+                <div class="wallpaper-preview">
+                    <video src="" autoplay loop muted></video>
+                </div>
+                <img class="windows-overlay" src="images/windows-overlay.png" alt="Windows Interface" onerror="this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 1920 1080%22%3E%3Crect y%3D%221030%22 width%3D%221920%22 height%3D%2250%22 fill%3D%22%23101010%22 opacity%3D%220.8%22%2F%3E%3C%2Fsvg%3E';">
+            </div>
+            <div class="preview-actions">
+                <h3 class="preview-title"></h3>
+                <p class="preview-categories"></p>
+                <button class="download-btn"><i class="fas fa-download"></i> Скачать</button>
+                <button class="close-preview"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>О проекте</h3>
+                <p>LiveWallpapers - лучшие живые обои для вашего рабочего стола. Большая коллекция, удобный поиск и категории.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Ссылки</h3>
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Подписаться</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 LiveWallpapers. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
